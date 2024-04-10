@@ -1,5 +1,6 @@
 use error::maybe;
 
 fn main() {
-    let _ = maybe::convert(None);
+    let e = maybe::convert(None);
+    assert!(e.is_err())
 }

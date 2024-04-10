@@ -2,6 +2,8 @@ use error::custom_error::MyError;
 use std::error::Error;
 use thiserror::Error;
 
+// Define your own error type
+
 struct Wrapper<E: Error> {
     inner: E,
 }

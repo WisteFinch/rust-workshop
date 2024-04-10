@@ -5,6 +5,8 @@ use std::{
 
 use error::custom_error::MyError;
 
+// Convert foreign error type to your own type
+
 #[derive(Debug, PartialEq, Eq)]
 enum ForeignError {
     This,
