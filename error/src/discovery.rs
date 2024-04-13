@@ -1,5 +1,5 @@
 fn _sometimes_you_dont_have_to_unwrap() {
-    // when you want to do nothing when is's wrong or empty
+    // when you want to do nothing if is's wrong or empty
     let e: Option<()> = None;
     e.map(|_x| {
         // do something here
