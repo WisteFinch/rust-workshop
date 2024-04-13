@@ -1,6 +1,7 @@
 use error::basic;
 
-// Unwrap the Result and return the inner value
+// This test looks for a function that unwraps a `Result` and return the inner value.
+// You can use `unwrap()` provided by rust stdlib
 
 fn main() {
     let ok: Result<String, String> = Ok("Ok".into());

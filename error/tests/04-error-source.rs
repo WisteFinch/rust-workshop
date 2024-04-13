@@ -5,7 +5,9 @@ use std::{
 
 use error::custom_error::MyError;
 
-// Convert foreign error type to your own type
+// This test is almost the same as the last, 
+// but this time you should be able to convert a foreign error type into your type
+// using trait `From<T>`
 
 #[derive(Debug, PartialEq, Eq)]
 enum ForeignError {
