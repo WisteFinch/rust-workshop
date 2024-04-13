@@ -1,6 +1,8 @@
-pub enum MyError {}
+pub enum MyError {
+    JustWrong
+}
 
 // You can turn an Option into a Result
 pub fn convert(maybe: Option<()>) -> Result<(), MyError> {
-    todo!()
+    maybe.ok_or(MyError::JustWrong)
 }

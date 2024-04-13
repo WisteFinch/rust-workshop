@@ -30,6 +30,7 @@ fn helper() -> ForeignError {
 
 fn something() -> Result<(), MyError<ForeignError>> {
     Err(helper().into())
+    // todo!()
 }
 
 fn main() {}
